@@ -1,0 +1,169 @@
+/* Reset & Dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to bottom right, #ffffff, #e0f4ff);
+  color: #003366;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+}
+
+/* ================== NAVBAR ================== */
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+.nav-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Responsif navbar */
+@media (max-width: 600px) {
+  .navbar-inner {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .logo-group {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* ================== SECTION UMUM ================== */
+.section {
+  padding: 5rem 2rem;
+}
+.section-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* ================== TOMBOL ================== */
+.section-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+  min-width: 250px;
+}
+.btn {
+  display: block;
+  padding: 1.2rem 2rem;
+  font-size: 1.1rem;
+  background-color: #005fa3;
+  color: white;
+  border-radius: 15px;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #00487a;
+}
+
+/* ================== GAMBAR ================== */
+.section-image {
+  flex: 1;
+  min-width: 300px;
+}
+.section-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ================== TEKS NARASI (SECTION 1) ================== */
+.section-text {
+  flex: 1;
+  min-width: 300px;
+  text-align: justify;
+}
+.section-text h2 {
+  font-size: 2rem;
+  color: #005fa3;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.section-text p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Tombol sekunder (untuk 'lebih lanjut') */
+.btn.btn-secondary {
+  background-color: #0077a3;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.btn.btn-secondary:hover {
+  background-color: #005a7a;
+}
+.icon {
+  font-size: 1.2rem;
+}
+
+/* ================== RESPONSIF ================== */
+@media (max-width: 768px) {
+  .section-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-image img {
+    max-width: 100%;
+  }
+
+  .section-text,
+  .section-buttons {
+    text-align: center;
+  }
+}
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1rem;
+  color: #777;
+}
